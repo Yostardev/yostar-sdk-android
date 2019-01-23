@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AiriSDK2_2_1</string>
+
+    <string-array name="login_platform">
+        <item>设备号登陆</item>
+        <item>继承码登陆 </item>
+        <item>Twitter登陆</item>
+        <item>Facebook登陆</item>
+        <item>Yostar登陆</item>
+    </string-array>
+
+    <string-array name="link_platform">
+        <item>Twitter绑定</item>
+        <item>Facebook绑定</item>
+        <item>Yostar绑定</item>
+    </string-array>
+
+    <string-array name="pay_method">
+        <item>Google支付</item>
+        <item>Au支付</item>
+    </string-array>
+</resources>

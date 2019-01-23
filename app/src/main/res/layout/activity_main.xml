@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/layout_border"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/resultTv"
+        android:scrollbars="vertical"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:text="结果"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/initLayout"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:id="@+id/initBtn"
+                    android:layout_marginBottom="5dp"
+                    android:text="初始化"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/loginLayout"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/getDeviceIdBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="获取设备号"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/showHelpshiftBTn"
+                    android:background="@drawable/mybutton"
+                    android:text="打开Helpshift"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/loginFastBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="快速登陆"/>
+
+                <Spinner
+                    android:id="@+id/loginSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:entries="@array/login_platform"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/loginBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="登陆"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/settingLayout"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/GetTransCodeBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="获取继承码"/>
+
+                <Spinner
+                    android:id="@+id/linkSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:entries="@array/link_platform"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/linkBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="绑定"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/unlinkBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="解除绑定"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/birthDaySetBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="生日设置"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/uploadEventBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="事件上传"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/systemShareBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="调用系统分享"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/goPayBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="支付"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/backBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="返回"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/logoutBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="注销"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/payLayout"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <Spinner
+                    android:id="@+id/productIdSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/extraDataEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@android:dimen/app_icon_size"
+                    android:background="@drawable/editshape"
+                    android:layout_marginBottom="5dp"
+                    android:hint="附加参数"
+                    />
+
+                <EditText
+                    android:id="@+id/serverEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@android:dimen/app_icon_size"
+                    android:background="@drawable/editshape"
+                    android:layout_marginBottom="5dp"
+                    android:hint="服务器环境"
+                    android:text="production"
+                    />
+
+                <Spinner
+                    android:id="@+id/payMethodSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:layout_marginBottom="5dp"
+                    android:entries="@array/pay_method"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/payBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="支付"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/backPayBtn"
+                    android:background="@drawable/mybutton"
+                    android:text="返回"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
