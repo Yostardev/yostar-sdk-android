@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AiriSDKSample</string>
+    <string name="result">result: </string>
+        <string name="init">initialize </string>
+        <string name="get_deviceId">Get the device number </string>
+        <string name="open_helpshift">Open Helpshift</string>
+        <string name="quick_login">Quick login </string>
+        <string name="login">login</string>
+        <string name="get_transcode">Get inheritance code </string>
+        <string name="binding">binding </string>
+        <string name="unbinding">Unbind</string>
+        <string name="set_birthday">birthday settings</string>
+        <string name="event_upload"> event upload </string>
+        <string name="system_share">call system sharing </string>
+        <string name="payment">payment </string>
+        <string name="goback">return </string>
+        <string name="logout">logout </string>
+        <string name="extra_date">Additional parameters </string>
+        <string name="server_tag">server environment</string>
+        <string name="pay">payment </string>
+
+    <string-array name="login_platform">
+        <item>device number login</item>
+        <item> inheritance code login </item>
+        <item>Twitter login</item>
+        <item>Facebook login</item>
+        <item>Yostar Login</item>
+    </string-array>
+
+    <string-array name="link_platform">
+        <item>Twitter Binding</item>
+        <item>Facebook binding</item>
+        <item>Yostar binding</item>
+    </string-array>
+
+    <string-array name="pay_method">
+        <item>Google Payment</item>
+        <item>Au payment</item>
+    </string-array>
+</resources>
