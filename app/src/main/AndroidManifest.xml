@@ -1,25 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.YoStarEN.AzurLane">
+    package="com.YostarENAmazon.AzurLane">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="${app_name}"
+        android:networkSecurityConfig="@xml/airisdk_network_security_config"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name="com.airisdk.sample.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="arknights.global"
+                    android:pathPattern="/android/ark/en" />
+            </intent-filter>
         </activity>
 
-        <meta-data android:name="helpshift_apiKey" android:value="b26868695b3e202689ec866b4bec20c2" />
-        <meta-data android:name="helpshift_demain" android:value="yostar.helpshift.com" />
-        <meta-data android:name="helpshift_appId" android:value="yostar_platform_20181026055054767-319b66f91681a68" />
+        <activity
+            android:name="com.airisdk.sample.SampleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.airisdk.sample.BuyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity"
+            android:allowTaskReparenting="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- android:host must use the full package name found in Manifest General Attributes -->
+                <data
+                    android:host="${applicationId}"
+                    android:scheme="amzn" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+
+        <meta-data
+            android:name="aihelp_apiKey"
+            android:value="${hs_apikey}" />
+        <meta-data
+            android:name="aihelp_demain"
+            android:value="${hs_domain}" />
+        <meta-data
+            android:name="aihelp_appId"
+            android:value="${hs_appid}" />
+        <meta-data
+            android:name="BASE_URL"
+            android:value="${base_url}" />
+
+        <meta-data
+            android:name="oneStore_publicKey"
+            android:value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCYEzSR7kxcQeVT3BPbSufVXH1SnRNjZlk8/G6CXjc8X5Ajms3YFUHtYJZ9/XaBFyJZpuG2OKxxPoXl9KjnRHLZELyxKdThJYYdWP6gpDJalsw+sem6hqiTwt5zeHsEFFv5UQPVU9G4rv99eXTbOvE1HN4phi2ydJH3YoWj781FfQIDAQAB" />
+
+
+        <receiver android:name="com.amazon.device.iap.ResponseReceiver">
+            <intent-filter>
+                <action
+                    android:name="com.amazon.inapp.purchasing.NOTIFY"
+                    android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY" />
+            </intent-filter>
+        </receiver>
 
     </application>
 

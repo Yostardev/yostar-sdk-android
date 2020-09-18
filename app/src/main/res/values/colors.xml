@@ -3,10 +3,21 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="page_white">#ffffff</color>
+    <color name="gray_cccc">#a0f3ecec</color><!--灰色cc -->
+    <color name="black_ff">#b01a1a1a</color>
+    <color name="white">#ffffff</color>
+    <color name="white_ff">#b0f1ffff</color>
+
 
     <color name="holo_color_pressed">#5533b5e5</color>
     <color name="holo_color">#33b5e5</color>
 
     <color name="transparent">#00000000</color>
     <color name="demo_background">#EBEBEB</color>
+
+    <color name="mpc_start_color">#FF00FFED</color>
+    <color name="mpc_end_color">#FFED00FF</color>
+    <!-- 没有被渐变填充区域的颜色 -->
+    <color name="mpc_default_color">#1AFFFFFF</color>
 </resources>

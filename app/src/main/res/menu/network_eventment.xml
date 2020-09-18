@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:checkable="true"
+        android:title="http://test.sdk.azurlane.jp:3011" />
+    <item
+        android:checkable="true"
+        android:title="https://azurusapitest.yo-star.com:8080" />
+
+    <item
+        android:checkable="true"
+        android:title="http://test.sdk.azurlane.jp" />
+
+    <item
+        android:checkable="true"
+        android:title="https://azurapi.yostar.co.jp/" />
+
+    <item
+        android:checkable="true"
+        android:title="https://passporttest.mahjongsoul.com:9093" />
+
+    <item
+        android:checkable="true"
+        android:title="https://passporttest.mahjongsoul.com:9092"
+        app:showAsAction="never" />
+
+    <item
+        android:checkable="true"
+        android:title="https://passport.mahjongsoul.com:9093" />
+
+    <item
+        android:checkable="true"
+        android:title="https://passport.mahjongsoul.com:9092" />
+
+    <item
+        android:checkable="true"
+        android:title="https://passporttest.arknights.jp:443" />
+
+    <item
+        android:checkable="true"
+        android:title="https://passport.arknights.jp:443" />
+
+    <item
+        android:checkable="true"
+        android:title="https://passport.arknights.global:443" />
+
+    <item
+        android:checkable="true"
+        android:title="https://passport.arknights.kr:443" />
+
+    <item
+        android:checkable="true"
+        android:title="https://azurusapi.yo-star.com" />
+
+</menu>

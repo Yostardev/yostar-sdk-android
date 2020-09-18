@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/welcomLayout"
+    tools:context="com.airisdk.sample.WelcomeActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/initLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/initSDK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="初始化" />
+
+                <Button
+                    android:id="@+id/primeGet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="活动获取" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/uidWithTokenLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UID 和 Token 强制登陆" />
+
+                <Button
+                    android:id="@+id/deviceID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="获取设备号" />
+
+                <Button
+                    android:id="@+id/quickLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="快速登陆" />
+
+                <Button
+                    android:id="@+id/deviceLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="设备号登陆" />
+
+                <Button
+                    android:id="@+id/yostarLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="悠星登陆" />
+
+                <Button
+                    android:id="@+id/inheritanceLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="引继码登陆" />
+
+                <Button
+                    android:id="@+id/facebookLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook" />
+
+                <Button
+                    android:id="@+id/twitterLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter" />
+
+                <Button
+                    android:id="@+id/googleLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Google Email" />
+
+                <Button
+                    android:id="@+id/googleplayLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Google Play" />
+
+                <Button
+                    android:id="@+id/appleLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in with Apple" />
+
+                <Button
+                    android:id="@+id/amzonLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amazon" />
+
+                <Button
+                    android:id="@+id/resetLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="恢复账号" />
+
+                <Button
+                    android:id="@+id/adjustEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="事件打点" />
+
+                <Button
+                    android:id="@+id/query_remote_config_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="远程配置" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accountCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/payBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="支付" />
+
+                <Button
+                    android:id="@+id/aboutBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="账号相关" />
+
+                <Button
+                    android:id="@+id/otherBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="其他功能" />
+
+                <Button
+                    android:id="@+id/agreementBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="用户协议" />
+
+                <Button
+                    android:id="@+id/errorBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="错误信息提示" />
+
+                <Button
+                    android:id="@+id/backLoginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="返回" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aboutLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/transCodeReq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="获取继承码" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/linkFB"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="绑定FB" />
+
+                    <Button
+                        android:id="@+id/unlinkFB"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="解绑FB" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/linkAmazon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="绑定Amazon" />
+
+                    <Button
+                        android:id="@+id/unlinkAmazon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="解绑Amazon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/linkTW"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="绑定TW" />
+
+                    <Button
+                        android:id="@+id/unlinkTW"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="解绑TW" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/linkYostar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="绑定Yostar" />
+
+                    <Button
+                        android:id="@+id/unlinkYostar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="解绑Yostar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/linkGoogle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="绑定Google" />
+
+                    <Button
+                        android:id="@+id/unlinkGoogle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="解绑Google" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/linkGooglePlay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="绑定Google Play" />
+
+                    <Button
+                        android:id="@+id/unlinkGooglePlay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="解绑Google Play" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/deleAccountBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="删除账号" />
+
+                <Button
+                    android:id="@+id/resetAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="恢复账号" />
+
+                <Button
+                    android:id="@+id/backCenterBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="返回账号中心" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otherLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/customServiceBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="客服" />
+
+                <Button
+                    android:id="@+id/statisticBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="统计" />
+
+                <Button
+                    android:id="@+id/shareBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="分享" />
+
+                <Button
+                    android:id="@+id/scoreBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="评分" />
+
+                <Button
+                    android:id="@+id/backCenterBtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="返回用户中心" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/payLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/backCenterBtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="返回用户中心" />
+
+                <Button
+                    android:id="@+id/amazonPrimeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="亚马逊活动商品" />
+
+                <Button
+                    android:id="@+id/GetAmazonPrime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="领取亚马逊活动商品" />
+
+                <Button
+                    android:id="@+id/skuDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="获取商品信息（Google）" />
+
+                <Button
+                    android:id="@+id/birthSetBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="设置生日" />
+
+                <Button
+                    android:id="@+id/goPayBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="去支付" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:fadeScrollbars="false"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/white" />
+
+</LinearLayout>
