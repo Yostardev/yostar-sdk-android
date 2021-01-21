@@ -82,9 +82,9 @@ android {
 dependencies {
 
 
-    implementation 'com.airisdk.sdk:network:2.1.46'
-    implementation 'com.twitter.sdk.android.core:twitter:2.1.46'
-    implementation 'com.samsung.android.sdk:iap6:2.1.46'
-    implementation 'com.airisdk.sdk:core:2.1.46'
+    implementation 'com.airisdk.sdk:network:2.1.47'
+    implementation 'com.twitter.sdk.android.core:twitter:2.1.47'
+    implementation 'com.samsung.android.sdk:iap6:2.1.47'
+    implementation 'com.airisdk.sdk:core:2.1.47'
 
 }
