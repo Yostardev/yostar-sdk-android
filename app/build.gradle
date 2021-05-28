@@ -35,7 +35,7 @@ android {
                     app_name: "方舟美服测试",
                     hs_appid:"yostar_platform_2f103fa4-e158-4556-9b6d-8685fdb0af6c",
                     hs_apikey:"YOSTAR_app_59d69b706fdb43d6b51c43a907b61fbb",
-                    hs_domain:"yostar@aihelp.net",
+                    hs_domain:"yostar.aihelp.net",
                     productID:"com.yostar.arknights.starterheadhunt",
                     base_url:"https://passport.arknights.global:443"
             ]
