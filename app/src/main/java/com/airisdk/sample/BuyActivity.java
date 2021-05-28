@@ -1,10 +1,10 @@
 package com.airisdk.sample;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import com.YostarENAmazon.AzurLane.R;
 import com.airisdk.sdkcall.tools.entity.SDKSkudetails;
 import com.airisdk.sdkcall.tools.utils.AiriSDKUtils;

@@ -61,10 +61,7 @@ android {
             shrinkResources false
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+   
     dexOptions {
         javaMaxHeapSize "6g"
         preDexLibraries = false
@@ -82,9 +79,9 @@ android {
 dependencies {
 
 
-    implementation 'com.airisdk.sdk:network:2.1.47'
-    implementation 'com.twitter.sdk.android.core:twitter:2.1.47'
-    implementation 'com.samsung.android.sdk:iap6:2.1.47'
-    implementation 'com.airisdk.sdk:core:2.1.47'
+    implementation 'com.airisdk.sdk:network:2.1.54'
+    implementation 'com.twitter.sdk.android.core:twitter:2.1.54'
+    implementation 'com.samsung.android.sdk:iap6:2.1.54'
+    implementation 'com.airisdk.sdk:core:2.1.54'
 
 }
