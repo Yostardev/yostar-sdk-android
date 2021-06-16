@@ -27,9 +27,11 @@ public class BuyActivity extends AppCompatActivity {
         purchasItemList = new ArrayList<>() ;
         recyclerView = findViewById(R.id.productListView) ;
         Map<String,Object> skudetails = AiriSDKUtils.getInstance().getStoreSkudetails() ;
-        for(String key:skudetails.keySet()){
-            SDKSkudetails sku = (SDKSkudetails) skudetails.get(key);
-            purchasItemList.add(new PurchasItem(sku.getProductId(),sku.getPrice(), Currency.getInstance(sku.getCurrency()).getSymbol())) ;
+        if (skudetails != null){
+            for(String key:skudetails.keySet()){
+                SDKSkudetails sku = (SDKSkudetails) skudetails.get(key);
+                purchasItemList.add(new PurchasItem(sku.getProductId(),sku.getPrice(), Currency.getInstance(sku.getCurrency()).getSymbol())) ;
+            }
         }
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
