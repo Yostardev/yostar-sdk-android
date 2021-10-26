@@ -79,9 +79,9 @@ android {
 dependencies {
 
 
-    implementation 'com.airisdk.sdk:network:2.1.55'
-    implementation 'com.twitter.sdk.android.core:twitter:2.1.55'
-    implementation 'com.samsung.android.sdk:iap6:2.1.55'
-    implementation 'com.airisdk.sdk:core:2.1.55'
+    implementation 'com.airisdk.sdk:network:2.1.58'
+    implementation 'com.twitter.sdk.android.core:twitter:2.1.58'
+    implementation 'com.samsung.android.sdk:iap6:2.1.58'
+    implementation 'com.airisdk.sdk:core:2.1.58'
 
 }
